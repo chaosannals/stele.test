@@ -1,18 +1,18 @@
+﻿using System;
 using System.IO;
 using Xunit;
 
-namespace Stele.Test
+namespace Stele.Grammar.Test
 {
-    public class InterpreterTest
+    public class LexerTest
     {
         [Fact]
-        public void TestInterpret()
+        public void TestPoll()
         {
-            Interpreter interpreter = new Interpreter();
             string path = Path.Combine("..", "..", "..", "res", "calculation.stele");
             using (FileStream reader = File.OpenRead(path))
             {
-                interpreter.Interpret(reader);
+                Lexer lexer = new Lexer(reader);
             }
         }
     }

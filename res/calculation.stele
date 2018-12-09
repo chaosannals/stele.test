@@ -1,0 +1,15 @@
+﻿add :: (a, b) {
+    return a + b;
+};
+
+sub :: (a, b) {
+    return a - b;
+}
+
+one :: 1;
+two :: 2;
+result :: add(one, two);
+console.log(result);
+other :: 5;
+result = sub(other, one);
+console.log(result);
