@@ -9,7 +9,7 @@ namespace Stele.Test
         public void TestInterpret()
         {
             Interpreter interpreter = new Interpreter();
-            string path = Path.Combine("..", "..", "..", "res", "calculation.stele");
+            string path = Path.Combine("..", "..", "..", "..", "Resources", "calculation.stele");
             using (FileStream reader = File.OpenRead(path))
             {
                 interpreter.Interpret(reader);

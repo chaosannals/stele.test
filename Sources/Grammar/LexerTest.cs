@@ -9,7 +9,7 @@ namespace Stele.Grammar.Test
         [Fact]
         public void TestPoll()
         {
-            string path = Path.Combine("..", "..", "..", "res", "calculation.stele");
+            string path = Path.Combine("..", "..", "..", "..", "Resources", "calculation.stele");
             using (FileStream reader = File.OpenRead(path))
             {
                 Lexer lexer = new Lexer(reader);
